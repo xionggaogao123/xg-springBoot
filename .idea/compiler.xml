@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xg-springBoot" />
+        <module name="xg-common" />
+        <module name="xg-user" />
+        <module name="xg-user-api" />
+        <module name="xg-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="xg-springBoot" target="1.5" />
+      <module name="xg-common" target="1.7" />
+      <module name="xg-springBoot" target="1.7" />
+      <module name="xg-user" target="1.7" />
+      <module name="xg-user-api" target="1.7" />
+      <module name="xg-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

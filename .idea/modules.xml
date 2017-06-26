@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/xg-common/xg-common.iml" filepath="$PROJECT_DIR$/xg-common/xg-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-springBoot.iml" filepath="$PROJECT_DIR$/xg-springBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-user/xg-user.iml" filepath="$PROJECT_DIR$/xg-user/xg-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-user-api/xg-user-api.iml" filepath="$PROJECT_DIR$/xg-user-api/xg-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-web/xg-web.iml" filepath="$PROJECT_DIR$/xg-web/xg-web.iml" />
     </modules>
   </component>
 </project>
