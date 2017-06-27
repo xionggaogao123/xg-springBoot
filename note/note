@@ -1,0 +1,18 @@
+
+
+
+
+(1) @JsonIgnore  主键作用
+    作用是json序列化时将Java bean中的一些属性忽略掉，序列化和反序列化都受影响。
+    如：生成json 时不生成age 属性
+            public class user {
+            private String name;
+            @JsonIgnore
+            private int age;
+        }
+
+
+ (2)整合步骤
+
+
+
