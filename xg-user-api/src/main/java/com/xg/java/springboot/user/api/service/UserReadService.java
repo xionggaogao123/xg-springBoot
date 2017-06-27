@@ -1,7 +1,7 @@
-package com.xg.java.springboot.service;
+package com.xg.java.springboot.user.api.service;
 
-import com.xg.java.springboot.module.Response;
-import com.xg.java.springboot.mudule.User;
+import com.xg.java.springboot.common.module.Response;
+import com.xg.java.springboot.user.api.bean.User;
 
 /**
  * Created by xionggao on 2017/6/26.

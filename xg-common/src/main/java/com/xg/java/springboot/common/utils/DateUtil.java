@@ -1,4 +1,4 @@
-package com.xg.java.springboot.utils;
+package com.xg.java.springboot.common.utils;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.*;

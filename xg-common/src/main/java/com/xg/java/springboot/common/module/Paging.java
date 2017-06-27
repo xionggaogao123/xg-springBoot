@@ -1,4 +1,4 @@
-package com.xg.java.springboot.module;
+package com.xg.java.springboot.common.module;
 
 import java.io.Serializable;
 import java.util.Collections;

@@ -1,6 +1,4 @@
-package com.xg.java.springboot.module;
-
-import static org.junit.Assert.*;
+package com.xg.java.springboot.common;
 
 /**
  * Created by xionggao on 2017/6/26.
