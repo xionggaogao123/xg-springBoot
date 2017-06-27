@@ -3,8 +3,11 @@ package com.xg.java.springboot.user.api.service;
 import com.xg.java.springboot.common.module.Response;
 import com.xg.java.springboot.user.api.bean.User;
 
+import java.util.List;
+
 /**
  * Created by xionggao on 2017/6/26.
+ *
  */
 public interface UserReadService {
 
@@ -19,5 +22,5 @@ public interface UserReadService {
      * 用户信息分页显示
      * @return
      */
-
+    Response<List<User>> listUser();
 }

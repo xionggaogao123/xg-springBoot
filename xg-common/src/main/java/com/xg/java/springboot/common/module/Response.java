@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  * Created by xionggao on 2017/6/26.
+ * 封装了响应参数
  */
 public class Response<T> implements Serializable {
     private static final long serialVersionUID = -7466776806637903813L; //选中类名，按alt + enter

@@ -62,8 +62,8 @@ public abstract class MyBatisDao<T> {
      * @param t 范型对象
      * @return 增加记录数
      */
-    public Boolean create(T t){
-        return sqlSession.insert(sqlId(CREATE), t) == 1;
+    public Integer create(T t){
+        return sqlSession.insert(sqlId(CREATE), t);
     }
 
     /**
@@ -91,8 +91,8 @@ public abstract class MyBatisDao<T> {
      * @param id 主键
      * @return 删除记录数
      */
-    public Boolean delete(Long id){
-        return sqlSession.delete(sqlId(DELETE), id) == 1;
+    public Integer delete(Long id){
+        return sqlSession.delete(sqlId(DELETE), id) ;
     }
 
     /**
@@ -120,8 +120,8 @@ public abstract class MyBatisDao<T> {
      * @param t 范型对象
      * @return 更新记录数
      */
-    public Boolean update(T t){
-        return sqlSession.update(sqlId(UPDATE), t) == 1;
+    public Integer update(T t){
+        return sqlSession.update(sqlId(UPDATE), t) ;
     }
 
 

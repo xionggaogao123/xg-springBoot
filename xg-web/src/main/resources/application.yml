@@ -1,3 +1,4 @@
+spring.profiles.active: local
 
 server:
     port:8080
@@ -11,6 +12,6 @@ spring:
     password:
 
 mybatis:
-    typeAliasesPackage:   io.terminus.user.model
-    mapperLocations: classpath:/com/modou/**/mapper/*.xml
-#    configLocation: classpath:/mybatis-config.xml
+    typeAliasesPackage:   com.xg.java.springboot.user.api.bean
+    mapperLocations: classpath*:mapper/*.xml
+

@@ -7,6 +7,7 @@ import java.util.Objects;
 
 /**
  * Created by xionggao on 2017/6/26.
+ * 封装了分页数据
  */
 
 public class Paging<T> implements Serializable {

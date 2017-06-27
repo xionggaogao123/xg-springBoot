@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="User">
+
+    <resultMap id="userMap" type="User">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userGender" column="user_gender"/>
+        <result property="userTel" column="user_tel"/>
+        <result property="userBirthday" column="user_birthday"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="table">
+        tb_user
+    </sql>
+
+    <sql id="columns">
+        id,
+        <include refid="cols_exclude_id"/>
+    </sql>
+
+    <sql id="cols_exclude_id">
+       user_id,user_name,user_gender,user_tel,user_birthday,create_time,update_time
+    </sql>
+
+    <sql id="values">
+        #{userId},#{userName},#{userGender},#{userTel},#{userBirthday},#{createTime},#{updateTime}
+    </sql>
+
+    <insert id="create" parameterType="com.xg.java.springboot.user.api.bean.User" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO
+        <include refid="table"/>
+        (<include refid="cols_exclude_id"/>)
+        VALUES
+        (<include refid="values"/>)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE FROM
+        <include refid="table"/>
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.xg.java.springboot.user.api.bean.User">
+        UPDATE
+        <include refid="table"/>
+        <set>
+            <if test="userId != null">userId= #{userId},</if>
+            <if test="userName != null">userName= #{userName},</if>
+            <if test="userGender != null">userGender = #{userGender},</if>
+            <if test="userTel != null">userTel = #{userTel},</if>
+            <if test="userBirthday != null">userBirthday = #{userBirthday},</if>
+            <if test="createTime != null">createTime = #{createTime},</if>
+            <if test="updateTime != null">updateTime = #{updateTime},</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <select id="list"  resultType="com.xg.java.springboot.user.api.bean.User">
+        SELECT * FROM tb_user
+    </select>
+
+    <select id="getUserById" parameterType="java.lang.Long" resultMap="userMap">
+        SELECT *
+        FROM <include refid="table"/> WHERE id = #{id}
+    </select>
+
+    <select id="count" parameterType="map" resultType="long">
+        SELECT COUNT(1)
+        FROM
+        <include refid="table"/>
+    </select>
+
+
+</mapper>

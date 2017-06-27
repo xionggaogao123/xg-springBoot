@@ -7,8 +7,8 @@ import java.util.Date;
 
 /**
  * Created by xionggao on 2017/6/26.
+ * 时间格式化组件
  */
-//时间格式化组件
 public class DateUtil {
 
     private static final DateTimeParser[] parsers = new DateTimeParser[]{
