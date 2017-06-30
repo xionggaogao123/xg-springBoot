@@ -1,4 +1,12 @@
 
+知识点：druid数据源，druid的sql监控，druid过滤，mybatis xml 配置，mybatis分页插件，logback日志配置
+多环境配置，发送邮件，AOP拦截，过滤器spring 拦截器，全局异常，统一响应，自定义事务，动态数据源
+读写分离，Redis Session , redis缓存，xml注入spring boot无法扫描到的bean，actuator监控，kafka消息队列
+Swagger2配置，dubbo注解方法，es搜索引擎等
+
+
+
+
 (1) @JsonIgnore  主键作用
     作用是json序列化时将Java bean中的一些属性忽略掉，序列化和反序列化都受影响。
     如：生成json 时不生成age 属性
@@ -10,7 +18,20 @@
 
 
  (2)整合步骤
-    建立好工程
+        ① 建好工程（分模块建立功能）
+        ② 在跟目录的pom.xml 中添加 spring boot 的依赖
+         <parent>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>1.4.1.RELEASE</version>
+                <relativePath/>
+         </parent>
+
+         ③ 注意 映射mapper.xml文件的位置 及常见的spring boot的约定
+
+         ④
+
+
 
 
 
