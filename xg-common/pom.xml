@@ -11,16 +11,44 @@
     <artifactId>xg-common</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.4.1</version>
         </dependency>
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.terminus.boot.rpc</groupId>
+            <artifactId>rpc-common</artifactId>
+            <version>1.0.2.RELEASE</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+            </exclusions>
+            <version>2.2.2</version>
+        </dependency>
+
 
     </dependencies>
 

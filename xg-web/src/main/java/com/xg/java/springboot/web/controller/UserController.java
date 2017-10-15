@@ -2,9 +2,9 @@ package com.xg.java.springboot.web.controller;
 
 import com.xg.java.springboot.common.exception.JsonResponseException;
 import com.xg.java.springboot.common.module.Response;
-import com.xg.java.springboot.user.api.bean.User;
-import com.xg.java.springboot.user.api.service.UserReadService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.xg.java.springboot.user.api.user.model.User;
+import com.xg.java.springboot.user.api.user.service.UserReadService;
+import io.terminus.boot.rpc.common.annotation.RpcConsumer;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @Autowired
+    @RpcConsumer
     private UserReadService userReadService;
 
     @RequestMapping(value = "test")
@@ -32,4 +32,7 @@ public class UserController {
         }
         return userResponse.getResult();
     }
+    
+    
+    
 }

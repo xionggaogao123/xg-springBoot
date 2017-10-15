@@ -1,30 +1,29 @@
-package com.xg.java.springboot.user.serviceImpl;
+package com.xg.java.springboot.user.impl.user.service;
 
 import com.google.common.base.Strings;
-import com.google.common.base.Throwables;
 import com.xg.java.springboot.common.module.Response;
-import com.xg.java.springboot.user.api.bean.User;
-import com.xg.java.springboot.user.api.service.UserReadService;
-import com.xg.java.springboot.user.dao.UserDao;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.spi.LoggerFactory;
+import com.xg.java.springboot.user.api.user.model.User;
+import com.xg.java.springboot.user.api.user.service.UserReadService;
+import com.xg.java.springboot.user.impl.user.dao.UserDao;
+import io.terminus.boot.rpc.common.annotation.RpcProvider;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Locale;
-import java.util.logging.Logger;
+
 
 /**
  * Created by xionggao on 2017/6/27.
  *
  */
 @Service
+@Slf4j
+@RpcProvider
 public class UserReadServiceImpl implements UserReadService {
-    private Log logger = LogFactory.getLog(UserReadServiceImpl.class);
 
     private final UserDao userDao;
+    
     @Autowired
     public UserReadServiceImpl(UserDao userDao) {
         this.userDao = userDao;
@@ -39,7 +38,7 @@ public class UserReadServiceImpl implements UserReadService {
             User user = userDao.getUserById(id);
             return Response.ok(user);
         }catch (Exception e){
-            logger.error("find User By id fail cause:{}"+ e.getMessage());
+            log.error("find User By id fail cause:{}"+ e.getMessage());
             return Response.fail("find.User.fail");
         }
     }

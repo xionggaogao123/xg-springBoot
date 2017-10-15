@@ -1,7 +1,8 @@
-package com.xg.java.springboot.user.api.service;
+package com.xg.java.springboot.user.api.user.service;
+
 
 import com.xg.java.springboot.common.module.Response;
-import com.xg.java.springboot.user.api.bean.User;
+import com.xg.java.springboot.user.api.user.model.User;
 
 import java.util.List;
 

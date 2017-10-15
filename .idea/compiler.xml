@@ -2,19 +2,34 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xg-admin" />
+        <module name="xg-auth" />
+        <module name="xg-auth-api" />
         <module name="xg-common" />
+        <module name="xg-item" />
+        <module name="xg-item-api" />
+        <module name="xg-trade" />
+        <module name="xg-trade-api" />
         <module name="xg-user" />
         <module name="xg-user-api" />
         <module name="xg-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="xg-admin" target="1.7" />
+      <module name="xg-auth" target="1.7" />
+      <module name="xg-auth-api" target="1.7" />
       <module name="xg-common" target="1.7" />
+      <module name="xg-item" target="1.7" />
+      <module name="xg-item-api" target="1.7" />
       <module name="xg-springBoot" target="1.7" />
+      <module name="xg-trade" target="1.7" />
+      <module name="xg-trade-api" target="1.7" />
       <module name="xg-user" target="1.7" />
       <module name="xg-user-api" target="1.7" />
       <module name="xg-web" target="1.7" />

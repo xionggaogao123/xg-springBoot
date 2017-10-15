@@ -1,9 +1,9 @@
-package com.xg.java.springboot.user.serviceImpl;
+package com.xg.java.springboot.user.impl.user.service;
 
 import com.xg.java.springboot.common.module.Response;
-import com.xg.java.springboot.user.api.bean.User;
-import com.xg.java.springboot.user.api.service.UserWriterService;
-import com.xg.java.springboot.user.dao.UserDao;
+import com.xg.java.springboot.user.api.user.model.User;
+import com.xg.java.springboot.user.api.user.service.UserWriterService;
+import com.xg.java.springboot.user.impl.user.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class UserWriterServiceImpl implements UserWriterService{
+public class UserWriterServiceImpl implements UserWriterService {
 
     private final UserDao userDao;
 

@@ -1,12 +1,9 @@
-package com.xg.java.springboot.user.api.service;
+package com.xg.java.springboot.user.api.user.service;
 
 import com.xg.java.springboot.common.module.Response;
-import com.xg.java.springboot.user.api.bean.User;
+import com.xg.java.springboot.user.api.user.model.User;
 
-/**
- * Created by xionggao on 2017/6/27.
- *
- */
+
 public interface UserWriterService {
 
      /**

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/xg-admin/xg-admin.iml" filepath="$PROJECT_DIR$/xg-admin/xg-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-auth/xg-auth.iml" filepath="$PROJECT_DIR$/xg-auth/xg-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-auth-api/xg-auth-api.iml" filepath="$PROJECT_DIR$/xg-auth-api/xg-auth-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-common/xg-common.iml" filepath="$PROJECT_DIR$/xg-common/xg-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-item/xg-item.iml" filepath="$PROJECT_DIR$/xg-item/xg-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-item-api/xg-item-api.iml" filepath="$PROJECT_DIR$/xg-item-api/xg-item-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-springBoot.iml" filepath="$PROJECT_DIR$/xg-springBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-trade/xg-trade.iml" filepath="$PROJECT_DIR$/xg-trade/xg-trade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xg-trade-api/xg-trade-api.iml" filepath="$PROJECT_DIR$/xg-trade-api/xg-trade-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-user/xg-user.iml" filepath="$PROJECT_DIR$/xg-user/xg-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-user-api/xg-user-api.iml" filepath="$PROJECT_DIR$/xg-user-api/xg-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xg-web/xg-web.iml" filepath="$PROJECT_DIR$/xg-web/xg-web.iml" />

@@ -2,16 +2,20 @@ spring.profiles.active: local
 
 server:
     port:8080
-    address:localhost
+    model:localhost
 
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/xionggao?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql://localhost:3306/xionggao?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
     password:
 
 mybatis:
-    typeAliasesPackage:   com.xg.java.springboot.user.api.bean
-    mapperLocations: classpath*:mapper/*.xml
+  mapper-locations:  classpath*:mapper/*Mapper.xml
+  type-aliases-package: >
+      com.xg.java.springboot.user.api.user.model,
+      com.xg.java.springboot.user.api.address.model
+
+
 
